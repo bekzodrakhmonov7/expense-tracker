@@ -1,19 +1,17 @@
 # Expense tracker
-
 ---
 CLI tool to track your expenses. With no external python library usage.
 
 ## Functionality
-
 ---
 
 - Add expense to list
 - Remove expense from list
 - Summarize the total amount of expenses
 - Summarize the expenses by month
+- Edit expense
 
 ## Usage
-
 ---
 
 ### Add expense
@@ -23,7 +21,6 @@ python main.py add --description "Movie ticket" --amount 7
 ```
 
 Output:
-
 ```
 Expense added successfully (ID: 6edbcc25-cc2d-4a5b-8d5a-54cec003d496)
 ```
@@ -35,7 +32,6 @@ python main.py remove --id 6edbcc25-cc2d-4a5b-8d5a-54cec003d496
 ```
 
 Output:
-
 ```
 Expence was successfully removed
 ```
@@ -46,8 +42,7 @@ Expence was successfully removed
 python main.py summary
 ```
 
-Output
-
+Output:
 ```
 Total expences: $7
 ```
@@ -58,8 +53,20 @@ Total expences: $7
 python main.py summary --month 2
 ```
 
-Output
-
+Output:
 ```
 Total amount spent in February is 7
 ```
+
+### Edit expense
+
+```bash
+python main.py edit --id 6edbcc25-cc2d-4a5b-8d5a-54cec003d496 --description "Movie ticket for Avengers"
+```
+
+Output:
+```
+Expense was successfully edited
+```
+
+Project was done according to https://roadmap.sh/projects/expense-tracker guideleines
